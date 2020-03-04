@@ -9,22 +9,16 @@ html {
     box-sizing: inherit;
 }
 
-body {
-    height: inherit;
-}
-
 .grid {
-    display: grid;
+    grid-area: body;
+    background-color: antiquewhite;
+    display: flex;
     max-width: calc(1440px - 140px);
     margin: auto;
     height: inherit;
     grid-template-columns: 250px 1fr 250px;
     grid-template-rows: 150px 1fr 100px;
-    grid-template-areas: "head head head" "body body" "footer";
-}
-
-.item {
-    border: gray solid 1px;
+    grid-template-areas: "head head" "body body" "footer";
 }
 
 .head {
@@ -38,18 +32,9 @@ body {
     height: 100%;
 }
 
-.body {
-    grid-area: body;
-    background-color: antiquewhite;
-}
-
 .item_banana {
     height: 33.3%;
     width: 100%;
-}
-
-.footer {
-    grid-area: footer;
 }
 
 .flex {
@@ -58,4 +43,226 @@ body {
 
 .flex>.item {
     flex: 1 1 0%;
+}
+
+
+/* dropdown */
+
+.dropbtn {
+    background-color: rgb(51, 141, 168);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: center;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #rgb(51, 141, 168);
+}
+
+
+/* tabel */
+
+footer {
+    flex: 1 100%;
+    height: 5vh;
+    grid-area: footer;
+    display: flex;
+}
+
+header {
+    height: 5vh;
+}
+
+.input {
+    flex: 1;
+    margin-left: 1px;
+}
+
+.chart {
+    flex: 1;
+    margin-right: 1px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.result {
+    color: #85BB65;
+    font-size: 56px;
+    font-family: sans-serif, 'Roboto';
+    margin: 5px;
+}
+
+h1 {
+    color: #85BB65;
+    font-family: Righteous;
+    font-size: 38px;
+    margin: 20px;
+    font-weight: normal;
+}
+
+.piecontainer {
+    display: grid;
+    justify-items: center;
+}
+
+.fas {
+    font-size: 10vh;
+}
+
+.fa-car {
+    color: #F5A9E1
+}
+
+.fa-file-invoice-dollar {
+    color: #31B404
+}
+
+.fa-money-check {
+    color: #0489B1
+}
+
+.fa-shopping-basket {
+    color: #0080FF
+}
+
+.fa-home {
+    color: #AC58FA
+}
+
+.fa-route {
+    color: #DF7401
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+button {
+    width: 10vh;
+    background: #0A2443;
+    border: none;
+}
+
+.buttons {
+    margin-top: 100px;
+}
+
+.input_keys {
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+
+.euros {
+    display: flex;
+    flex-direction: column;
+    color: #85BB65;
+    font-family: sans-serif, 'Roboto';
+    font-size: 20px;
+}
+
+input {
+    width: 10vh;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.costbtn {
+    color: #85BB65;
+    font-family: sans-serif, 'Roboto';
+    font-size: 14px;
+    font-weight: bold;
+    background: rgb(18, 69, 131);
+    padding: 5px 10px 5px 10px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.foot {
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+.resize {
+    font-size: 5vh;
+    color: #85BB65;
+}
+
+.maintitle {
+    justify-content: left;
+    color: #85BB65;
+    font-size: 30px;
+    font-family: Righteous;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: grid;
+    }
+}
+
+input {
+    border: 5px solid rgb(8, 28, 53);
+    border-radius: 4px;
+}
+
+.ibtn {
+    margin: 15px;
+}
+
+.calculator__keys {
+    display: grid;
+    flex-flow: column;
+    align-items: center;
+}
+
+.input_keys,
+.hide {
+    display: none;
 }
