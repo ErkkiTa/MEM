@@ -9,6 +9,7 @@ document.querySelectorAll('.feedback li').forEach(entry => entry.addEventListene
 
 //arvutus
 
+
 function addElement(x1, x2, x3, x4, x5) {
     var total = x1 + x2 + x3 + x4 + x5;
     var values = [x1, x2, x3, x4, x5];

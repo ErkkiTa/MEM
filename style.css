@@ -91,30 +91,6 @@ h1 {
     font-size: 5vh;
 }
 
-.fa-car {
-    color: #F5A9E1
-}
-
-.fa-file-invoice-dollar {
-    color: #31B404
-}
-
-.fa-money-check {
-    color: #0489B1
-}
-
-.fa-shopping-basket {
-    color: #0080FF
-}
-
-.fa-home {
-    color: #AC58FA
-}
-
-.fa-route {
-    color: #DF7401
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -185,7 +161,7 @@ input[type=number] {
 
 @media only screen and (max-width: 1000px) {
     .container {
-        display: grid;
+        display: flex;
     }
 }
 
