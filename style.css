@@ -9,6 +9,10 @@ html {
     box-sizing: inherit;
 }
 
+.kast {
+    display: flex;
+}
+
 .grid {
     grid-area: body;
     background-color: antiquewhite;
@@ -43,10 +47,14 @@ footer {
     height: 5vh;
     grid-area: footer;
     display: flex;
+    position: absolute;
+    bottom: 30px;
 }
 
 header {
     height: 5vh;
+    position: absolute;
+    position: 0;
 }
 
 .input {
@@ -148,11 +156,10 @@ input[type=number] {
 }
 
 .costbtn {
-    color: #85BB65;
+    color: black;
     font-family: sans-serif, 'Roboto';
     font-size: 14px;
     font-weight: bold;
-    background: rgb(18, 69, 131);
     padding: 5px 10px 5px 10px;
     border-radius: 50%;
     margin: 10px;
