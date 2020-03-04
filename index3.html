@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Righteous">
-    <title>Document</title>
+    <title>mem</title>
 </head>
 <header>
 
@@ -17,7 +17,28 @@
 <body>
     <div>
         <div>
-
+            <div class="largecontainer">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                    <a href="#">Nõudepesija</a>
+                    <a href="#">Koristaja</a>
+                    <a href="#">Õpetaja</a>
+                    <a href="#">Autojuht</a>
+                    <a href="#">Lapsehoidja</a>
+                    <a href="#">Kokk</a>
+                    <a href="#">Elektrik</a>
+                    <a href="#">Tehnik</a>
+                    <a href="#">Õde</a>
+                    <a href="#">Nõustaja</a>
+                    <a href="#">Ehitaja</a>
+                    <a href="#">Raamatupidaja</a>
+                    <a href="#">Õmbleja</a>
+                    <a href="#">Juuksur</a>
+                    <a href="#">Psüholoog</a>
+                    <a href="#">Aednik</a>
+                    <a href="#">Logistik</a>
+                </div>
+            </div>
         </div>
         <div>
             <div class="container">
@@ -26,74 +47,373 @@
                         <div class="buttons">
                             <div class="row">
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('#travel_container')"><i class="fas fa-vacuum"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('#dish_container')"><i class="fas fa-route"></i></button></br>
                                     <div class="euros">
 
                                         <div>
-                                            <span id="traveltotal"></span>
+                                            <span id="dishtotal"></span>
 
                                         </div>
                                     </div>
-                                    <div class="input_keys" id="travel_container">
+                                    <div class="input_keys" id="dish_container">
                                         <div>
-                                            <input id="travelinput" type="number" />
+                                            <input id="dishinput" type="number" />
                                         </div>
                                         <div>
-                                            <button id="travelkulu" class="costbtn">Sisesta</button>
+                                            <button id="dishkulu" class="costbtn">Sisesta</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('#travel_container')"><i class="fas fa-route"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('#clean_container')"><i class="fas fa-route"></i></button></br>
                                     <div class="euros">
 
                                         <div>
-                                            <span id="traveltotal"></span>
+                                            <span id="cleantotal"></span>
 
                                         </div>
                                     </div>
-                                    <div class="input_keys" id="travel_container">
+                                    <div class="input_keys" id="clean_container">
                                         <div>
-                                            <input id="travelinput" type="number" />
+                                            <input id="cleaninput" type="number" />
                                         </div>
                                         <div>
-                                            <button id="travelkulu" class="costbtn">Sisesta</button>
+                                            <button id="cleankulu" class="costbtn">Sisesta</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('#travel_container')"><i class="fas fa-route"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('#teacher_container')"><i class="fas fa-route"></i></button></br>
                                     <div class="euros">
 
                                         <div>
-                                            <span id="traveltotal"></span>
+                                            <span id="teachertotal"></span>
 
                                         </div>
                                     </div>
-                                    <div class="input_keys" id="travel_container">
+                                    <div class="input_keys" id="teacher_container">
                                         <div>
-                                            <input id="travelinput" type="number" />
+                                            <input id="teacherinput" type="number" />
                                         </div>
                                         <div>
-                                            <button id="travelkulu" class="costbtn">Sisesta</button>
+                                            <button id="teacherkulu" class="costbtn">Sisesta</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('#travel_container')"><i class="fas fa-route"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('#driver_container')"><i class="fas fa-route"></i></button></br>
                                     <div class="euros">
 
                                         <div>
-                                            <span id="traveltotal"></span>
+                                            <span id="drivertotal"></span>
 
                                         </div>
                                     </div>
+                                    <div class="input_keys" id="driver_container">
+                                        <div>
+                                            <input id="driverinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="driverkulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#sitter_container')"><i class="fas fa-vacuum"></i></button></br>
+                                    <div class="euros">
 
+                                        <div>
+                                            <span id="sittertotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="sitter_container">
+                                        <div>
+                                            <input id="sitterinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="sitterkulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#chef_container')"><i class="fas fa-route"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="cheftotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="chef_container">
+                                        <div>
+                                            <input id="chefinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="chefkulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#electric_container')"><i class="fas fa-route"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="electrictotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="electric_container">
+                                        <div>
+                                            <input id="electricinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="electrickulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#technik_container')"><i class="fas fa-route"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="ctechniktotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="technik_container">
+                                        <div>
+                                            <input id="technikinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="technikkulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#nurse_container')"><i class="fas fa-vacuum"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="nursetotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="nurse_container">
+                                        <div>
+                                            <input id="nurseinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="nursekulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#builder_container')"><i class="fas fa-route"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="tbuildertotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="builder_container">
+                                        <div>
+                                            <input id="builderinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="builderkulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#accountant_container')"><i class="fas fa-route"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="taccountanttotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="accountant_container">
+                                        <div>
+                                            <input id="accountantinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="accountantkulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#saw_container')"><i class="fas fa-vacuum"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="sawtotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="saw_container">
+                                        <div>
+                                            <input id="sawinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="sawkulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#hair_container')"><i class="fas fa-vacuum"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="hairtotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="hair_container">
+                                        <div>
+                                            <input id="hairinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="hairkulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#pshy_container')"><i class="fas fa-route"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="pshytotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="pshy_container">
+                                        <div>
+                                            <input id="pshyinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="pshykulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#garndener_container')"><i class="fas fa-route"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="garndenertotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="garndener_container">
+                                        <div>
+                                            <input id="garndenerinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="garndenerkulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('#logic_container')"><i class="fas fa-vacuum"></i></button></br>
+                                    <div class="euros">
+
+                                        <div>
+                                            <span id="logictotal"></span>
+
+                                        </div>
+                                    </div>
+                                    <div class="input_keys" id="logic_container">
+                                        <div>
+                                            <input id="logicinput" type="number" />
+                                        </div>
+                                        <div>
+                                            <button id="logickulu" class="costbtn">Sisesta</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="item footer">
+            <ul class="feedback">
+                <li class="angry">
+                    <div>
+                        <svg class="eye left">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="eye right">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="mouth">
+                <use xlink:href="#mouth">
+            </svg>
+                    </div>
+                </li>
+                <li class="sad">
+                    <div>
+                        <svg class="eye left">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="eye right">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="mouth">
+                <use xlink:href="#mouth">
+            </svg>
+                    </div>
+                </li>
+                <li class="ok">
+                    <div></div>
+                </li>
+                <li class="good active">
+                    <div>
+                        <svg class="eye left">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="eye right">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="mouth">
+                <use xlink:href="#mouth">
+            </svg>
+                    </div>
+                </li>
+                <li class="happy">
+                    <div>
+                        <svg class="eye left">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="eye right">
+                <use xlink:href="#eye">
+            </svg>
+                    </div>
+                </li>
+            </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye">
+              <path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path>
+          </symbol>
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth">
+              <path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
+          </symbol>
+            </svg>
+        </div>
+    </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
