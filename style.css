@@ -281,10 +281,26 @@ input[type=number] {
     padding-left: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
-    .container {
-        display: flex;
-    }
+.layer {}
+
+input {
+    border: 5px solid rgb(8, 28, 53);
+    border-radius: 4px;
+}
+
+.ibtn {
+    margin: 5px;
+}
+
+.calculator__keys {
+    display: grid;
+    flex-flow: column;
+    align-items: center;
+}
+
+.input_keys,
+.hide {
+    display: none;
 }
 
 .layer {}
@@ -307,6 +323,34 @@ input {
 .input_keys,
 .hide {
     display: none;
+}
+
+.layer {}
+
+input {
+    border: 5px solid rgb(8, 28, 53);
+    border-radius: 4px;
+}
+
+.ibtn {
+    margin: 5px;
+}
+
+.calculator__keys {
+    display: grid;
+    flex-flow: column;
+    align-items: center;
+}
+
+.input_keys,
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        display: flex;
+    }
 }
 
 

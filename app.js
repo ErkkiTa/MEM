@@ -7,6 +7,10 @@ document.querySelectorAll('.feedback li').forEach(entry => entry.addEventListene
     e.preventDefault();
 }));
 
+function showBottom(value) {
+    document.getElementById("occupation").value = value;
+}
+
 //arvutus
 
 function getInputValue() {
@@ -16,43 +20,52 @@ function getInputValue() {
     var inputValue = document.getElementById("hours").value;
     var amet = document.getElementById("occupation").value;
 
-    if (amet == 'kokk') {
+    if (amet == 'Nõudepesija') {
         multiply = inputValue * moneyarray[1];
     }
-    if (amet == 'õpetaja') {
+    if (amet == 'Koristaja') {
         multiply = inputValue * moneyarray[2];
     }
-    if (amet == 'autojuht') {
+    if (amet == 'Õpetaja') {
         multiply = inputValue * moneyarray[3];
     }
-    if (amet == 'lapsehoidja') {
+    if (amet == 'Autojuht') {
         multiply = inputValue * moneyarray[4];
     }
-    if (amet == 'teenija') {
+    if (amet == 'Lapsehoidja') {
         multiply = inputValue * moneyarray[5];
     }
-    if (amet == 'majahoidja') {
+    if (amet == 'Kokk') {
         multiply = inputValue * moneyarray[6];
     }
-    if (amet == 'aednik') {
+    if (amet == 'Elektrik') {
         multiply = inputValue * moneyarray[7];
     }
-    if (amet == 'loomakasvataja') {
+    if (amet == 'Tehnik') {
         multiply = inputValue * moneyarray[8];
     }
-    if (amet == 'õmbleja') {
+    if (amet == 'Õde') {
         multiply = inputValue * moneyarray[9];
     }
-    if (amet == 'juuksur') {
+    if (amet == 'Ehitaja') {
         multiply = inputValue * moneyarray[10];
     }
-    if (amet == 'prügisorteerija') {
+    if (amet == 'Raamatupidaja') {
         multiply = inputValue * moneyarray[11];
     }
-    if (amet == 'pesumasina operaator') {
+    if (amet == 'Õmbleja') {
         multiply = inputValue * moneyarray[12];
     }
-    if (amet == 'hooldaja') {
+    if (amet == 'Juuksur') {
+        multiply = inputValue * moneyarray[13];
+    }
+    if (amet == 'Psüholoog') {
+        multiply = inputValue * moneyarray[13];
+    }
+    if (amet == 'Aednik') {
+        multiply = inputValue * moneyarray[13];
+    }
+    if (amet == 'Logistik') {
         multiply = inputValue * moneyarray[13];
     }
 
