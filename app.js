@@ -1,4 +1,6 @@
 // feedback
+let data = [];
+
 document.querySelectorAll('.feedback li').forEach(entry => entry.addEventListener('click', e => {
     if (!entry.classList.contains('active')) {
         document.querySelector('.feedback li.active').classList.remove('active');
@@ -70,4 +72,27 @@ function getInputValue() {
     }
 
     document.getElementById("sum").innerHTML = multiply + "€";
+
+    let obj = {
+        amet: amet,
+        sum: multiply + "€",
+        date: Date()
+    };
+
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("POST", "savedata.php", true);
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhttp.send("amet=" + amet + "&sum=" + multiply + "€");
+
+    xhttp.addEventListener('error', function(event) {
+        alert('Oops! Something went wrong.');
+        console.log(event);
+    });
+
+    console.log(obj);
+
 }
+
+/*
+
+*/
