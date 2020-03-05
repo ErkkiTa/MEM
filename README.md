@@ -12,7 +12,7 @@ _Liikmed:_  *Karl Gregor Rauniste TA-19
             *Markus Rätsep TAK-19
             *Merike Toose TA-18
 
-## Klakulaatori idee
+## Kalkulaatori idee
 
 MTÜ Emale [facebook](https://www.facebook.com/mtyEmale/) leht.
 
