@@ -12,8 +12,11 @@
 </head>
 
 <body>
-    <header class="head">
+    <header>
+        <div id="järgmine">
+            <a class="ibtn" type="button" href="index2.html"> Next page </a>
 
+        </div>
     </header>
     <div class="kast">
         <div class="layer">
@@ -21,7 +24,7 @@
             <input class="lahter" type="text" placeholder="" id="occupation" readonly>
             <p>tunnid</p>
             <input class="lahter" type="number" placeholder="" id="hours">
-            <button type="button" onclick="getInputValue();">Get Value</button>
+            <button type="button" onclick="getInputValue();">Arvuta</button>
             <div class="lahter" type="number" placeholder="" id="sum"></div>
         </div>
         <div>
@@ -31,59 +34,59 @@
                         <div class="buttons">
                             <div class="row">
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Nõudepesija')"><i class="fas fa-mug-hot"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Nõudepesija')"><i class="fas fa-mug-hot"></i><span class="tooltiptext">nõudepesija</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Koristaja')"><i class="fas fa-broom"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Koristaja')"><i class="fas fa-broom"></i><span class="tooltiptext">Koristaja</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Õpetaja')"><i class="fas fa-chalkboard-teacher"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Õpetaja')"><i class="fas fa-chalkboard-teacher"></i><span class="tooltiptext">Õpetaja</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Autojuht')"><i class="fas fa-car"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Autojuht')"><i class="fas fa-car"></i><span class="tooltiptext">Autojuht</span></button></br>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Lapsehoidja')"><i class="fas fa-baby-carriage"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Lapsehoidja')"><i class="fas fa-baby-carriage"></i><span class="tooltiptext">Lapsehoidja</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Kokk')"><i class="fas fa-pizza-slice"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Kokk')"><i class="fas fa-pizza-slice"></i><span class="tooltiptext">Kokk</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Elektrik')"><i class="fas fa-bolt"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Elektrik')"><i class="fas fa-bolt"></i><span class="tooltiptext">Elektrik</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Tehnik')"><i class="fas fa-wrench"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Tehnik')"><i class="fas fa-wrench"></i><span class="tooltiptext">Tehnik</span></button></br>
 
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Õde')"><i class="fas fa-user-nurse"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Õde')"><i class="fas fa-user-nurse"></i><span class="tooltiptext">Õde</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Ehitaja')"><i class="fas fa-hard-hat"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Ehitaja')"><i class="fas fa-hard-hat"></i><span class="tooltiptext">Ehitaja</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Raamatupidaja')"><i class="fas fa-file-invoice-dollar"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Raamatupidaja')"><i class="fas fa-file-invoice-dollar"></i><span class="tooltiptext">Raamatupidaja</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Õmbleja')"><i class="fas fa-tshirt"></i></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Õmbleja')"><i class="fas fa-tshirt"></i><span class="tooltiptext">Õmbleja</span></button></br>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Juuksur')"><i class="fas fa-cut"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Juuksur')"><i class="fas fa-cut"></i><span class="tooltiptext">Juuksur</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Psüholoog')"><i class="fas fa-id-card"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Psüholoog')"><i class="fas fa-id-card"></i><span class="tooltiptext">Psüholoog</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Aednik')"><i class="fas fa-globe-europe"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Aednik')"><i class="fas fa-globe-europe"></i><span class="tooltiptext">Aednik</span></button></br>
                                 </div>
                                 <div class="btncontainer">
-                                    <button class="ibtn" onclick="showBottom('Logistik')"><i class="fas fa-pallet"></i></button></br>
+                                    <button class="ibtn" onclick="showBottom('Logistik')"><i class="fas fa-pallet"></i><span class="tooltiptext">Logistik</span></button></br>
                                 </div>
                             </div>
                         </div>

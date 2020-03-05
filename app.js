@@ -17,7 +17,7 @@ function showBottom(value) {
 
 function getInputValue() {
 
-    var moneyarray = [0, 5.07, 3.80, 5.58, 3.81, 5.78, 3.80, 6.73, 6.04, 5.31, 3.99, 3.77, 4.48, 3.95]
+    var moneyarray = [0, 3.27, 3.91, 3.80, 5.58, 3.81, 5.07, 5.00, 7.45, 6.76, 8.20, 6.94, 5.31, 3.99, 6.79, 6.73, 8.22]
 
     var inputValue = document.getElementById("hours").value;
     var amet = document.getElementById("occupation").value;
@@ -91,8 +91,20 @@ function getInputValue() {
 
     console.log(obj);
 
+
 }
+fetch('https://ta19rauniste.itmajakas.ee/mem/data.json')
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        console.log(data);
 
-/*
+        for (index in data) {
+            console.log(data[index].amet);
+            let obj = data[index];
+            var div = document.getElementById('dataamet');
 
-*/
+            div.innerHTML += '<p> ' + obj.amet + '; ' + obj.sum + ';' + obj.date + ' </p>';
+        }
+    });
