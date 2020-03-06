@@ -1,6 +1,6 @@
-// feedback
 let data = [];
 
+// feedback
 document.querySelectorAll('.feedback li').forEach(entry => entry.addEventListener('click', e => {
     if (!entry.classList.contains('active')) {
         document.querySelector('.feedback li.active').classList.remove('active');
