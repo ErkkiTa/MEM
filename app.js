@@ -17,7 +17,7 @@ function showBottom(value) {
 
 function getInputValue() {
 
-    var moneyarray = [0, 3.27, 3.91, 3.80, 5.58, 3.81, 5.07, 5.00, 7.45, 6.76, 8.20, 6.94, 5.31, 3.99, 6.79, 6.73, 8.22]
+    var moneyarray = [0, 3.2, 3.9, 3.8, 5.6, 3.8, 5.1, 5.0, 7.45, 6.8, 8.2, 6.9, 5.3, 3.9, 6.8, 6.7, 8.2]
 
     var inputValue = document.getElementById("hours").value;
     var amet = document.getElementById("occupation").value;
@@ -62,13 +62,13 @@ function getInputValue() {
         multiply = inputValue * moneyarray[13];
     }
     if (amet == 'Psüholoog') {
-        multiply = inputValue * moneyarray[13];
+        multiply = inputValue * moneyarray[14];
     }
     if (amet == 'Aednik') {
-        multiply = inputValue * moneyarray[13];
+        multiply = inputValue * moneyarray[15];
     }
     if (amet == 'Logistik') {
-        multiply = inputValue * moneyarray[13];
+        multiply = inputValue * moneyarray[16];
     }
 
     document.getElementById("sum").innerHTML = multiply + "€";
@@ -105,6 +105,7 @@ fetch('https://ta19rauniste.itmajakas.ee/mem/data.json')
             let obj = data[index];
             var div = document.getElementById('dataamet');
 
-            div.innerHTML += '<p> ' + obj.amet + '; ' + obj.sum + ';' + obj.date + ' </p>';
+            div.innerHTML += '<p> ' + obj.amet + ' ;  ' + obj.sum + ' ; ' + obj.date + ' </p>';
         }
+
     });
