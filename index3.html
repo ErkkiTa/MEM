@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Righteous">
+    <title>mem</title>
+</head>
+
+<body>
+    <header>
+        <div id="järgmine">
+            <a class="ibtn" type="button" href="index2.html"> Next page </a>
+
+        </div>
+    </header>
+    <div class="kast">
+        <div class="layer">
+            <p>amet</p>
+            <input class="lahter" type="text" placeholder="" id="occupation" readonly>
+            <p>tunnid</p>
+            <input class="lahter" type="number" placeholder="" id="hours">
+            <button type="button" onclick="getInputValue();">Arvuta</button>
+            <div class="lahter" type="number" placeholder="" id="sum"></div>
+        </div>
+        <div>
+            <div class="container">
+                <div class="chart">
+                    <div class="title">
+                        <div class="buttons">
+                            <div class="row">
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Nõudepesija')"><i class="fas fa-mug-hot"></i><span class="tooltiptext">Nõudepesija</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Koristaja')"><i class="fas fa-broom"></i><span class="tooltiptext">Koristaja</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Õpetaja')"><i class="fas fa-chalkboard-teacher"></i><span class="tooltiptext">Õpetaja</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Autojuht')"><i class="fas fa-car"></i><span class="tooltiptext">Autojuht</span></button></br>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Lapsehoidja')"><i class="fas fa-baby-carriage"></i><span class="tooltiptext">Lapsehoidja</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Kokk')"><i class="fas fa-pizza-slice"></i><span class="tooltiptext">Kokk</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Elektrik')"><i class="fas fa-bolt"></i><span class="tooltiptext">Elektrik</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Tehnik')"><i class="fas fa-wrench"></i><span class="tooltiptext">Tehnik</span></button></br>
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Õde')"><i class="fas fa-user-nurse"></i><span class="tooltiptext">Õde</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Ehitaja')"><i class="fas fa-hard-hat"></i><span class="tooltiptext">Ehitaja</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Raamatupidaja')"><i class="fas fa-file-invoice-dollar"></i><span class="tooltiptext">Raamatupidaja</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Õmbleja')"><i class="fas fa-tshirt"></i><span class="tooltiptext">Õmbleja</span></button></br>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Juuksur')"><i class="fas fa-cut"></i><span class="tooltiptext">Juuksur</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Psühholoog')"><i class="fas fa-id-card"></i><span class="tooltiptext">Psühholoog</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Aednik')"><i class="fas fa-globe-europe"></i><span class="tooltiptext">Aednik</span></button></br>
+                                </div>
+                                <div class="btncontainer">
+                                    <button class="ibtn" onclick="showBottom('Logistik')"><i class="fas fa-pallet"></i><span class="tooltiptext">Logistik</span></button></br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="item footer">
+            <ul class="feedback">
+                <li class="angry">
+                    <div>
+                        <svg class="eye left">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="eye right">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="mouth">
+                <use xlink:href="#mouth">
+            </svg>
+                    </div>
+                </li>
+                <li class="sad">
+                    <div>
+                        <svg class="eye left">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="eye right">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="mouth">
+                <use xlink:href="#mouth">
+            </svg>
+                    </div>
+                </li>
+                <li class="ok">
+                    <div></div>
+                </li>
+                <li class="good active">
+                    <div>
+                        <svg class="eye left">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="eye right">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="mouth">
+                <use xlink:href="#mouth">
+            </svg>
+                    </div>
+                </li>
+                <li class="happy">
+                    <div>
+                        <svg class="eye left">
+                <use xlink:href="#eye">
+            </svg>
+                        <svg class="eye right">
+                <use xlink:href="#eye">
+            </svg>
+                    </div>
+                </li>
+            </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 4" id="eye">
+              <path d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1"></path>
+          </symbol>
+          <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 7" id="mouth">
+              <path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
+          </symbol>
+            </svg>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
