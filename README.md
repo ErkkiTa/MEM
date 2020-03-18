@@ -1,5 +1,8 @@
 # MTÜ Emale kodutööde kalkulaator
 
+https://ta19rauniste.itmajakas.ee/mem/index.html
+
+
 Kalkulaator on Kuressaare Ametikooli tarkvaraarendajate
 04.03. - 06.03.2020 projektipäevade õppeprojekt
 
